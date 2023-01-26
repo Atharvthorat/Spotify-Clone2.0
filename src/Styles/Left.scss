@@ -191,6 +191,10 @@
     color: #848484;
    
 }
+.playList ::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    
+}
     .playListContainer .playListScroll .playList{
 
         display: flex;

@@ -89,23 +89,31 @@
     background: rgba(0255, 0255, 0255, 0.1);
 cursor: pointer;
 }
+.progressBar::-moz-range-progress{
+    background: #848484;
+    width: var(--player-played);
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
 
-.progressBar::before{
+.progressBar:before{
     position: absolute;
      content: "";
-     top: 0%;
+     top: 0;
      left: 0;
      background: #848484;
-     width: 50%;
+     width: var(--player-played);
      height: 100%;
      border-radius: 10px;
      z-index: 2;
      transition: all 0.3s ease;
-
+    overflow: hidden;
 }
 .progressBar ::-webkit-slider-thumb{ 
     -webkit-appearance: none;
-    width: 15px;
+    width: var(--player-played);
     height: 15px;
     border-radius: 50%;
     outline: none;
@@ -116,4 +124,24 @@ cursor: pointer;
     color: #f1f1f1;
     font-size: 12px;
     font-weight: bold;
+}
+
+@media screen and (max-width:550px) {
+    .songImg{
+        width: 100px;
+        min-width: 100px;
+
+    }
+
+    .left, .middle, .right i{
+        margin: 0px 5px;
+    }
+    .bottom {
+        padding: unset;
+    }
+
+    .progressBar{
+        width: 65%;
+    }
+    
 }

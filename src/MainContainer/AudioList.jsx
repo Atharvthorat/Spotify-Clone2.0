@@ -46,7 +46,7 @@ const setMainSong =(songSrc, imgSrc) =>{
 
   return  <div className="audioList">
     <h2 className="title">
-        The List <span>{Songs.length} Songs</span>
+        My Favourite Songs <span>{Songs.length} Songs</span>
     </h2>
 
     <div className="songsContainer">

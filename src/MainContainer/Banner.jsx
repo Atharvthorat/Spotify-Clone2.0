@@ -9,7 +9,7 @@ const Banner = () => {
     <img className='bannerartist' src={Artist} alt="" />
     <div className="content">
       <div className="breadCrump">
-        <p>Home <span>/Popular Artist</span>
+        <p>Home <span>/Popular User</span>
         </p>
 
         <i><FaEllipsisH/></i>
@@ -18,13 +18,13 @@ const Banner = () => {
       <div className="artist">
          <div className="left">
           <div className="name">
-            <h2>Arijit Singh</h2>
+            <h2>Atharv Thorat</h2>
             <img src={Check} alt="" />
 
           </div>
           <p>
             <i><FaHeadphones/></i>
-            28,399,259 <span>Monthly Listeners</span>
+            28,399,259 <span>Monthly playlist Listeners</span>
           </p>
          </div>
          <div className="right">

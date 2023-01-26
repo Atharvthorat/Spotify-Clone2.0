@@ -323,4 +323,62 @@
     filter: drop-shadow(0px 0px 4px #49e12e);
 
   }
+
+  @media screen and (max-width:550px) {
+
+    .mainContainer{
+        min-width: 380px;
+
+    }
+    .content{
+        padding: 10px 15px;
+        }
+      .name h2{
+      font-size: 25px;
+      }
+    .right a{
+        padding: 5px;
+        font-size: 12px;
+        margin: 0 10px;
+
+
+    }
+    .menuList {
+        padding: 50 10px;
+
+        ul li{
+            margin: 0 5px;
+        }
+        p{
+            font-size: 10px;
+            i{
+                font-size: 10px;
+            }
+        }
+     }
+
+     .audioList{
+        padding: 10px 5px;
+             }
+             .section{
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+             }
+      
+      .songName{
+        width: 100%;
+      }       
+      .hits{
+        justify-content: space-between;
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+      }
+      .imgBox img{
+        width: 80px;
+        min-width: 80px;
+
+      }
+  }
  
